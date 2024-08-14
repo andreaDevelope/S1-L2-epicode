@@ -1,124 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 16px;
+header > div {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-    width: 100px;
+header > div > img + p {
+  margin-left: 1rem;
 }
 
-h1{
-    display: inline-block;
-    margin-left: 8px;
+img {
+  width: 100px;
 }
 
-nav{
-    background-color: lightcoral;
-    height: 50px;
-    line-height: 50px;
+nav {
+  background-color: lightcoral;
+  height: 10vh;
+  line-height: 10vh;
 }
 
-nav > div{
-    display: flex;
-    justify-content: space-around;
+h1 {
+  display: inline-block;
+  margin-left: 0.8rem;
 }
 
-main{
-    width: 90vw;
-    margin: 0 auto;
+nav > p {
+  display: flex;
+  justify-content: space-around;
 }
 
-
-article > section{
-    text-align: center;
-    margin: 15px 0;
+main {
+  width: 90vw;
+  margin: 0 auto;
 }
 
-main > section{
-    text-align: center;
-    margin: 15px 0;
-
+article > section {
+  text-align: center;
+  margin-block: 1rem;
 }
 
-h2 > p{
-    font-size: 12px;
+main > section {
+  text-align: center;
+  margin-block: 1rem;
 }
 
-.table{
-    display: flex;
-    justify-content: center;
+h1 + p {
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
 }
 
-ul, ol{
-    width: 300px;
-    margin: 0 auto;
-    text-align: left;
+.table {
+  display: flex;
+  justify-content: center;
 }
 
-.parag-articolo{
-    margin: 50px 0;
+.liste {
+  display: flex;
+  justify-content: center;
 }
 
-li{
-    width: 300px;
-    margin: 10px 0;
+ul,
+ol {
+  text-align: left;
 }
 
-.titlo-articolo{
-    margin: 50px 0;
+li::marker {
+  color: lightcoral;
+  font-size: 1.3rem;
 }
 
-.fine-liste{
-    margin-top: 50px;
+.parag-articolo {
+  margin-block: 3rem;
 }
 
-.descrizione-parag{
-    margin: 30px 0;
+li {
+  width: 100%;
+  margin-block: 0.7rem;
 }
 
-.fine-articolo{
-    padding: 16px;
+.titlo-articolo {
+  margin-block: 4rem;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
+.fine-liste {
+  margin-top: 4rem;
 }
 
-label{
-    margin: 10px 0;
+caption {
+  margin-block: 1rem;
 }
 
-input, button{
-    text-align: center;
-    border-radius: 16px;
-    padding: 3px;
+td,
+th {
+  border: 1px solid rgb(1, 1, 1);
+  padding: 3px;
 }
 
-button{
-    margin-top: 10px;
+.descrizione-parag {
+  margin-block: 2rem;
 }
 
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 16px;
-    background-color: black;
-    color: white;
+.fine-articolo {
+  padding: 1rem;
 }
 
-footer > div{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+label {
+  margin-block: 0.8rem;
+}
+
+input,
+button {
+  text-align: center;
+  border-radius: 16px;
+  padding: 3px;
+}
+
+button {
+  margin-top: 0.8rem;
+}
+
+aside {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 2rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: rgb(1, 1, 1);
+  color: rgba(254, 254, 254, 1);
+  min-height: 20vh;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  line-height: 20vh;
 }
